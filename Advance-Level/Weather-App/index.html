@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script defer src="./script.js"></script>
+
+
+    <div class="main" id="main">
+        <div class="weather_app" id="weather_app">
+            <div class="main_headind">* Weather App *</div>
+            <section class="searchBar">
+                <form id="searchBarForm" class="searchBarForm">
+                    <input id="searchBar_text" class="searchBar_text" placeholder="City, Country or Zip-code" type="text">
+                    <button class="searchBar_button"><i class='bx bx-search'></i></button>
+                </form>
+            </section>
+            <section class="yourLocation">
+                <i class='bx bx-current-location' id="locationIcon" style="font-size: larger;"></i>
+                <p class="location" id="location">Jaipur, IN</p>
+            </section>
+            <section class="temperature">
+                <div>
+                    <p class="tempInC" id="tempInC">35<sup>°c</sup></p>
+                </div>
+                <div>
+                    <div class="tempIcon" id="tempIcon"><i class='bx bxs-sun'></i></div>
+                    <div class="tempHigh" id="tempHigh">High 37<sup>°c</sup></div>
+                    <div class="tempLow" id="tempLow">Low 33<sup>°c</sup></div>
+                </div>
+            </section>
+
+            <div class="description" id="description" style="margin-top: 30px;">Clear Sky</div>
+            <div class="feelsLike" id="feelsLike">Feels Like 37<sup>°c</sup></div>
+            <div class="humidity" id="humidity">Humidity 54%</div>
+            <div class="wind" id="wind">Wind 1.54 m/s</div>
+            <br>
+            <hr>
+            <div class="week">
+                <div class="aboutDay1">
+                    <p class="day1Name" id="day1Name">Tue</p>
+                    <div class="day1DescriptionIcon" id="day1Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day1HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day1LowTemp">33<sup>°c</sup></p>
+                </div>
+                <div class="aboutDay2">
+                    <p class="day1Name" id="day2Name">Wed</p>
+                    <div class="day1DescriptionIcon" id="day2Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day2HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day2LowTemp">33<sup>°c</sup></p>
+                </div>
+                <div class="aboutDay3">
+                    <p class="day1Name" id="day3Name">Thu</p>
+                    <div class="day1DescriptionIcon" id="day3Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day3HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day3LowTemp">33<sup>°c</sup></p>
+                </div>
+                <div class="aboutDay4">
+                    <p class="day1Name" id="day4Name">Fri</p>
+                    <div class="day1DescriptionIcon" id="day4Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day4HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day4LowTemp">33<sup>°c</sup></p>
+                </div>
+                <div class="aboutDay5">
+                    <p class="day1Name" id="day5Name">Sat</p>
+                    <div class="day1DescriptionIcon" id="day5Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day5HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day5LowTemp">33<sup>°c</sup></p>
+                </div>
+                <div class="aboutDay6">
+                    <p class="day1Name" id="day6Name">Sun</p>
+                    <div class="day1DescriptionIcon" id="day6Icon"><i class="bx bxs-cloud"></i></div>
+                    <p class="day1HighTemp" id="day6HighTemp">37<sup>°c</sup></p>
+                    <p class="day1LowTemp" id="day6LowTemp">33<sup>°c</sup></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

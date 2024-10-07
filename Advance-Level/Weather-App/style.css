@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather_app{
+    width: 40vw;
+    height: 98vh;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-image: url(./clear_sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_headind{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.searchBarForm{
+    display: flex;
+    border: 1px solid black;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+.searchBar_text{
+    width: calc(100% - 40px);
+    background-color: transparent;
+    font-size: 17px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+    
+}
+.searchBar_text::placeholder{
+    color: rgb(221, 221, 221);
+}
+.searchBar_button{
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    i{
+        font-size: 21px;
+    font-weight: bolder;
+    }
+}
+.searchBar_button:hover{
+    cursor: pointer;
+}
+.yourLocation{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-weight: 600;
+}
+.temperature{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+.tempInC{
+    font-size: 70px;
+}
+.tempIcon{
+    text-align: center;
+    i{
+        font-size: 45px;
+    }
+}
+.tempHigh, .tempLow{
+    font-size: 17px;
+    font-weight: 600;
+}
+.description, .feelsLike, .humidity, .wind{
+    text-align: center;
+    font-size: large;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.humidity, .wind{
+    opacity: 0.6;
+}
+hr{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.week{
+    padding: 5px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    :nth-child(n){
+        text-align: center;
+    };
+}
+.day1Name{
+    font-size: large;
+    font-weight: bold;
+}
+.day1DescriptionIcon{
+    font-size: 35px;
+}
+.day1HighTemp{
+    margin-top: -7px;
+}
