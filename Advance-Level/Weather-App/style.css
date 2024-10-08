@@ -36,7 +36,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .searchBarForm{
     display: flex;
@@ -116,7 +116,6 @@ hr{
 
 .week{
     padding: 5px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -133,4 +132,24 @@ hr{
 }
 .day1HighTemp{
     margin-top: -7px;
+}
+.sign{
+    margin-top: 50px;
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    rotate: -30deg;
+    display: none;
+}
+
+@media (max-width: 436px) {
+    .weather_app{
+        width: 95vw;
+    }
+    .sign{
+        display: block;
+    }
 }
