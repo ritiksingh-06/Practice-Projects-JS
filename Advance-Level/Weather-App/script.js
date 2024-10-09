@@ -89,6 +89,7 @@ if ("geolocation" in navigator) {
                 document.getElementById("weather_app").classList.add("night")
                 document.getElementById("sign").style.color = "white"
                 document.getElementById("searchBarForm").style.borderColor = "white"
+                document.getElementById("main").style.backgroundColor = "black"
             } else{
                 tempIcon.innerHTML = dataOfCurrentLocation.weather[0].description.includes("heavy") ? "<i class='bx bxs-cloud-lightning'></i>"
                                     : dataOfCurrentLocation.weather[0].description.includes("light") ? "<i class='bx bx-cloud-snow'></i>"
@@ -104,6 +105,7 @@ if ("geolocation" in navigator) {
                 document.getElementById("weather_app").classList.add("day")
                 document.getElementById("sign").style.color = "black"
                 document.getElementById("searchBarForm").style.borderColor = "black"
+                document.getElementById("main").style.backgroundColor = "skyblue"
             }
 
 
@@ -126,11 +128,13 @@ if ("geolocation" in navigator) {
                 document.getElementById("weather_app").classList.add("night")
                 document.getElementById("sign").style.color = "white"
                 document.getElementById("searchBarForm").style.borderColor = "white"
+                document.getElementById("main").style.backgroundColor = "black"
             } else{
                 document.getElementById("weather_app").classList.remove("night")
                 document.getElementById("weather_app").classList.add("day")
                 document.getElementById("sign").style.color = "black"
                 document.getElementById("searchBarForm").style.borderColor = "black"
+                document.getElementById("main").style.backgroundColor = "skyblue"
             }
         })
         
@@ -177,6 +181,7 @@ searchBtn.addEventListener("click", function(e){
                 document.getElementById("weather_app").classList.add("night")
                 document.getElementById("sign").style.color = "white"
                 document.getElementById("searchBarForm").style.borderColor = "white"
+                document.getElementById("main").style.backgroundColor = "black"
             } else{
                 tempIcon.innerHTML = dataOfCurrentLocation.weather[0].description.includes("heavy") ? "<i class='bx bxs-cloud-lightning'></i>"
                                     : dataOfCurrentLocation.weather[0].description.includes("light") ? "<i class='bx bx-cloud-snow'></i>"
@@ -192,6 +197,7 @@ searchBtn.addEventListener("click", function(e){
                 document.getElementById("weather_app").classList.add("day")
                 document.getElementById("sign").style.color = "black"
                 document.getElementById("searchBarForm").style.borderColor = "black"
+                document.getElementById("main").style.backgroundColor = "skyblue"
             }
 
 
