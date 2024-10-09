@@ -136,6 +136,7 @@ if ("geolocation" in navigator) {
             locationIcon.classList.remove("bxs-map")
             locationIcon.classList.add("bx-current-location")
             document.getElementById("currentLocation").classList.add("hide")
+            document.getElementById("clearText").classList.add("hide")
             document.getElementById("searchBar_text").value = "";
 
             if(dayNight.textContent === "Night"){
