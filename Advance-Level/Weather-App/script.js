@@ -55,6 +55,23 @@ const getExactTimeWithOffsetAndStatus = (offsetInSeconds) => {
 };
 
 
+
+
+document.getElementById("searchBar_text").addEventListener("input", function(){
+    if(document.getElementById("searchBar_text").value.length == 0){
+        document.getElementById("clearText").classList.add("hide")
+    }else{
+        document.getElementById("clearText").classList.remove("hide")
+    }
+})
+
+
+
+document.getElementById("clearText").addEventListener("click", function(){
+    document.getElementById("searchBar_text").value = "";
+    document.getElementById("clearText").classList.add("hide");
+})
+
   
 
 
@@ -65,6 +82,7 @@ if ("geolocation" in navigator) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
         // console.log("Latitude:", latitude, "Longitude:", longitude);
+
         
         
         const fetchDataOfCurrentLocation = async function(){
@@ -110,9 +128,6 @@ if ("geolocation" in navigator) {
 
 
 
-
-
-
         }
         fetchDataOfCurrentLocation();
 
@@ -136,6 +151,7 @@ if ("geolocation" in navigator) {
                 document.getElementById("searchBarForm").style.borderColor = "black"
                 document.getElementById("main").style.backgroundColor = "skyblue"
             }
+
         })
         
 
@@ -153,9 +169,10 @@ if ("geolocation" in navigator) {
 const searchBtn = document.getElementById("searchBar_button")
 searchBtn.addEventListener("click", function(e){
     e.preventDefault();
+
     const fetchFunction = async function(){
         try {
-            const searchedText = document.getElementById("searchBar_text").value;
+            const searchedText = document.getElementById("searchBar_text").value.trim();
             const Response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchedText}&appid=eb3c087b27f5e3085e1231536ff853a0`)
             const dataOfCurrentLocation = await Response.json();
             // console.log(dataOfCurrentLocation)
@@ -199,6 +216,7 @@ searchBtn.addEventListener("click", function(e){
                 document.getElementById("searchBarForm").style.borderColor = "black"
                 document.getElementById("main").style.backgroundColor = "skyblue"
             }
+
 
 
         } catch (error) {
