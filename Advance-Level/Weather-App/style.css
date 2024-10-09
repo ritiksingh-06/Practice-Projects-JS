@@ -24,10 +24,10 @@ body{
     background-repeat: no-repeat;
 }
 .day{
-    background-image: url(./clear_sky.jpg);
+    background-image: url(./imgs/clear_sky.jpg);
 }
 .night{
-    background-image: url(./night-bg.jpeg);
+    background-image: url(./imgs/night-bg.jpeg);
 }
 .main_headind{
     text-align: center;
