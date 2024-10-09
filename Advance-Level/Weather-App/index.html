@@ -22,7 +22,7 @@
 
 
     <div class="main" id="main">
-        <div class="weather_app" id="weather_app">
+        <div class="weather_app day" id="weather_app">
             <div class="main_headind">* Weather App *</div>
             <section class="searchBar">
                 <form id="searchBarForm" class="searchBarForm">
@@ -33,6 +33,10 @@
             <section class="yourLocation">
                 <i class='bx bx-current-location' id="locationIcon" style="font-size: larger;"></i>
                 <p class="location" id="location">Jaipur, IN</p>
+                <div id="currentLocation" class="hide currentLocation">
+                    <p>Show Current</p>
+                    <i class="bx bx-current-location" style="font-size: larger;"></i>
+                </div>
             </section>
             <section class="temperature">
                 <div>
@@ -40,8 +44,8 @@
                 </div>
                 <div>
                     <div class="tempIcon" id="tempIcon"><i class='bx bxs-sun'></i></div>
-                    <div class="tempHigh" id="tempHigh">High 37<sup>°c</sup></div>
-                    <div class="tempLow" id="tempLow">Low 33<sup>°c</sup></div>
+                    <div class="dayNight" id="dayNight">Morning</div>
+                    <div class="time" id="time">7:00 AM</div>
                 </div>
             </section>
 
@@ -89,7 +93,7 @@
                     <p class="day1LowTemp" id="day6LowTemp">33<sup>°c</sup></p>
                 </div>
             </div> -->
-            <div class="sign">Ritik Singh__.</div>
+            <div class="sign" id="sign">Ritik Singh__.</div>
         </div>
     </div>
     
