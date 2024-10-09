@@ -25,7 +25,7 @@ const getExactTimeWithOffsetAndStatus = (offsetInSeconds) => {
     const mints = localTime.getMinutes();
     let status = '';
 
-    if (hours >= 5 && hours < 7) {
+    if (hours >= 4 && hours < 7) {
         status = 'Early Morning';
     } else if (hours >= 7 && hours < 10) {
         status = 'Morning';
