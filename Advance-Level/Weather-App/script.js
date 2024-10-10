@@ -235,6 +235,7 @@ setInterval(() => {
         lastMinute = currentMinute; // Update the last minute
         if(document.getElementById("searchBar_text").value.trim().length == 0){
             fetchDataOfCurrentLocation(latitude, longitude);
+            document.getElementById("currentLocation").classList.add("hide");
         }else{
             fetchFunction(yourLocation.textContent);
             document.getElementById("searchBar_text").value = yourLocation.textContent;
