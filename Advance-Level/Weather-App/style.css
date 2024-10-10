@@ -36,12 +36,36 @@ body{
     font-size: 35px;
     margin-top: 20px;
 }
+.liveSection{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.liveSection > :nth-child(1), .liveSection > :nth-child(2), .liveSection > :nth-child(3){
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.live{
+    height: 22px;
+    width: 55px;
+    background-color: red;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3px;
+}
 .searchBar{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 5px;
 }
 .searchBarForm{
     display: flex;
